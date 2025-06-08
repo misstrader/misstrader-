@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miss Trader - سایت آموزش تریدینگ</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+    }
+    body {
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+    }
+    .overlay {
+      background: rgba(0,0,0,0.85);
+      flex-grow: 1;
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(255 255 255 / 0.1);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 8px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    header h3 {
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+      font-style: italic;
+      color: #bbb;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      border-bottom: 2px solid white;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    /* خدمات ما */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .service-box {
+      background: rgba(255 255 255 / 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 280px;
+      max-width: 320px;
+      box-shadow: 0 0 15px rgba(255 255 255 / 0.15);
+      transition: background 0.3s ease;
+    }
+    .service-box:hover {
+      background: rgba(255 255 255 / 0.2);
+      cursor: default;
+    }
+    .service-box h3 {
+      margin-bottom: 12px;
+      color: #00d8ff;
+    }
+
+    /* ویدئو */
+    .video-container {
+      margin-top: 10px;
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0, 216, 255, 0.7);
+    }
+
+    /* پیشنهادات و سوالات متداول */
+    .suggestions, .faq {
+      background: rgba(255 255 255 / 0.08);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+    }
+    .faq-item summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #00d8ff;
+      list-style: none;
+    }
+    .faq-item p {
+      margin-top: 6px;
+      padding-left: 10px;
+      line-height: 1.4;
+      color: #ccc;
+    }
+
+    /* آموزش رایگان */
+    .free-courses .course-box {
+      background: rgba(0,216,255,0.15);
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 12px rgba(0,216,255,0.4);
+    }
+    .course-box h4 {
+      margin-bottom: 8px;
+    }
+    .course-box p {
+      font-size: 0.95rem;
+      color: #eee;
+    }
+
+    /* بیوگرافی */
+    .bio {
+      background: rgba(255 255 255 / 0.1);
+      border-radius: 10px;
+      padding: 25px 20px;
+      max-width: 900px;
+      margin: 30px auto 10px;
+      text-align: center;
+      font-size: 1rem;
+      color: #ddd;
+      font-style: italic;
+      box-shadow: 0 0 10px rgba(255 255 255 / 0.15);
+      line-height: 1.5;
+    }
+
+    /* ریسپانسیو */
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+
+    <header>
+      <h3>Founder of M&amp;W Concept</h3>
+      <h1>Empowering your trading journey</h1>
+      <p>دنبال چه میگردی؟ یا خدمات ما</p>
+    </header>
+
+    <section class="services">
+      <div class="service-box">
+        <h3>دوره‌های رایگان</h3>
+        <p>آموزش ترید در فارکس با ویدئوهای کامل و جامع</p>
+        <div class="video-container">
+          <video controls>
+            <source src="videos/free-trade-intro.mp4" type="video/mp4" />
+            مرورگر شما ویدئو را پشتیبانی نمی‌کند.
+          </video>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <h3>تحلیل هفتگی</h3>
+        <p>تحلیل بازار و کندل‌ها به صورت دقیق و حرفه‌ای</p>
+      </div>
+
+      <div class="service-box">
+        <h3>آموزش‌های پولی</h3>
+        <p>دوره‌های تخصصی پیشرفته با پشتیبانی و فایل‌های اختصاصی</p>
+      </div>
+    </section>
+
+    <section class="suggestions">
+      <h2>پیشنهادات ما</h2>
+      <p>ما به شما کمک می‌کنیم تا بهترین استراتژی‌ها را یاد بگیرید و بازار را با اطمینان تحلیل کنید. با استفاده از منابع به‌روز و آموزش‌های گام به گام، مسیر موفقیت شما تضمین شده است.</p>
+    </section>
+
+    <section class="faq">
+      <h2>سوالات متداول</h2>
+      <details class="faq-item" open>
+        <summary>اکوئیتی چیست؟</summary>
+        <p>اکوئیتی نشان‌دهنده میزان سرمایه واقعی شما بعد از لحاظ کردن سود و ضررهای باز است.</p>
+      </details>
+      <details class="faq-item">
+        <summary>اندیکاتور چیست؟</summary>
+        <p>اندیکاتورها ابزارهایی هستند که با استفاده از داده‌های قیمت و حجم، به تحلیلگر کمک می‌کنند روند بازار را بهتر تشخیص دهد.</p>
+      </details>
+      <details class="faq-item">
+        <summary>روش انجام بک‌تست چگونه است؟</summary>
+        <p>بک‌تست به معنای آزمون استراتژی معاملاتی روی داده‌های گذشته بازار برای ارزیابی عملکرد آن است.</p>
+      </details>
+    </section>
+
+    <section class="free-courses">
+      <h2>آموزش‌های رایگان</h2>
+
+      <div class="course-box">
+        <h4>مبانی تحلیل تکنیکال</h4>
+        <p>در این دوره با اصول اولیه تحلیل تکنیکال و نحوه خواندن کندل‌ها آشنا می‌شوید.</p>
+      </div>
+
+      <div class="course-box">
+        <h4>آموزش فارکس مقدماتی</h4>
+        <p>یادگیری مفاهیم پایه‌ای فارکس و چگونگی شروع معامله در بازارهای جهانی.</p>
+      </div>
+
+      <div class="course-box">
+        <h4>استراتژی‌های مدیریت ریسک</h4>
+        <p>روش‌های کنترل سرمایه و کاهش ریسک در معاملات برای حفظ سود بیشتر.</p>
+      </div>
+
+    </section>
+
+    <section class="bio">
+      <h2>درباره Miss Trader</h2>
+      <p>
+        Miss Trader با سال‌ها تجربه در بازارهای مالی، به عنوان یک تحلیلگر حرفه‌ای و مدرس دوره‌های تریدینگ شناخته می‌شود. 
+        تخصص ایشان در آموزش مفاهیم پیشرفته فارکس، ارائه تحلیل‌های دقیق هفتگی و راهنمایی معامله‌گران برای رسیدن به موفقیت پایدار است.
+        ماموریت Miss Trader، توانمندسازی هر فرد برای شروع مسیر موفقیت در دنیای پیچیده بازارهای مالی است.
+      </p>
+    </section>
+
+  </div>
+</body>
+</html>
